@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+/* fonts */
+.cormorant-garamond {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+/* global colours */
+.background1 {
+  background-color: rgb(236, 236, 236);
+}
+
+.background2 {
+  background-color: rgb(252, 252, 252);
+}
+
+.background3 {
+  background-color: rgb(28, 24, 24);
+}
+
+.heading-color {
+  color: #0072BC;
+}
+
+.subheading-color {
+  color: rgb(11, 136, 214);
+}
+
+
+/* custom css */
+@layer {
+  html {
+    @apply scroll-smooth
+  }
+}
