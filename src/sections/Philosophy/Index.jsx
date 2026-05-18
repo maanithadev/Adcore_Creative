@@ -22,19 +22,19 @@ const Philosophy = React.memo(() => {
                     <div id="boxes"
                         className="w-full h-full grid lg:grid-cols-2 lg:grid-rows-2 grid-cols-1 grid-rows-1 gap-x-[20px] gap-y-[20px] mt-[20px]">
                         <div id="box" className="normalTextReveal border-2 py-4 flex justify-center items-center gap-3">
-                            <ImPointRight className="text-lg" />
+                            <ImPointRight className="text-lg hidden sm:block" />
                             <p className="inter text-xl">Creative Concept Development</p>
                         </div>
                         <div id="box" className="normalTextReveal border-2 py-4 flex justify-center items-center gap-3">
-                            <ImPointRight />
+                            <ImPointRight className="text-lg hidden sm:block" />
                             <p className="inter text-xl">Advertising Campaigns</p>
                         </div>
                         <div id="box" className="normalTextReveal border-2 py-4 flex justify-center items-center gap-3">
-                            <ImPointRight />
+                            <ImPointRight className="text-lg hidden sm:block" />
                             <p className="inter text-xl">Branding & Visual Identity</p>
                         </div>
                         <div id="box" className="normalTextReveal border-2 py-4 flex justify-center items-center gap-3">
-                            <ImPointRight />
+                            <ImPointRight className="text-lg hidden sm:block" />
                             <p className="inter text-xl">Copywriting & Content Creation</p>
                         </div>
                     </div>

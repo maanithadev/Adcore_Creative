@@ -36,7 +36,7 @@ const Header = React.memo(() => {
         </div>
       </div>
       {mobile &&
-        <div id="mobilemenumain" className="box-border w-full bg-[#002944] px-[40px] py-[20px] absolute top-22 z-50">
+        <div id="mobilemenumain" className="box-border w-full bg-[#002944] px-[40px] py-[20px] absolute top-20 z-50">
           <div id="mobilemenubody">
             <div id="menulinks" className="flex flex-col gap-6 justify-center items-center text-white">
               <a href="#about" className="menulink" className="hover:underline underline-offset-8" onClick={() => setMobile(!mobile)}>About</a>
