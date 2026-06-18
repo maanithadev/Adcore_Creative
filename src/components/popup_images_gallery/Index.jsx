@@ -24,17 +24,14 @@ const Popup_Images_Gallery = ({ index, setIsOpen }) => {
                 setColCount(4)
             }
         }
-        window.addEventListener("DOMContentLoaded", handleWidth())
+        handleWidth()
 
         function fetchImages() {
             const foundArray = data.filter(item => item.id === index)
             setItemData(foundArray[0].images)
             setTitle(foundArray[0].title)
         }
-
         fetchImages()
-
-        return () => window.removeEventListener("DOMContentLoaded", handleWidth)
     }, [])
 
     const popup_images_gallery = document.querySelector("#popup_images_gallery")

@@ -1,19 +1,6 @@
 import React from "react"
-import { useState } from "react"
-import { useEffect } from "react"
 
 const Footer = React.memo(() => {
-
-    const [year, setYear] = useState(null)
-
-    useEffect(() => {
-        function footerYearAutoChange() {
-            let currentYear = new Date()
-            setYear(currentYear.getFullYear())
-        }
-
-        footerYearAutoChange()
-    }, [])
 
     return (
         <div id="footer" className="w-full h-fit px-10 pt-15 pb-7 flex justify-center bg-black relative">
@@ -46,19 +33,19 @@ const Footer = React.memo(() => {
                         className="w-full h-fit p-8 lg:border-r-1 lg:border-l-1 max-lg:border-t-1 max-lg:border-b-1 border-solid border-white">
                         <div id="links" className="w-full h-full text-white text-center flex flex-col justify-center gap-y-5">
                             <span className="font-bold text-3xl underline underline-offset-8">Links</span>
-                            <a href="#about" className="inter hoverScaleElements hover:underline underline-offset-8">
+                            <a href="#about" className="inter text-base font-medium hoverScaleElements text-gray-400 hover:text-blue-400">
                                 <p>About</p>
                             </a>
-                            <a href="#whatdo" className="inter hoverScaleElements hover:underline underline-offset-8">
+                            <a href="#whatdo" className="inter text-base font-medium hoverScaleElements text-gray-400 hover:text-blue-400">
                                 <p>Services</p>
                             </a>
-                            <a href="#philosophy" className="inter hoverScaleElements hover:underline underline-offset-8">
+                            <a href="#philosophy" className="inter text-base font-medium hoverScaleElements text-gray-400 hover:text-blue-400">
                                 <p>Philosophy</p>
                             </a>
-                            <a href="#foundernote" className="inter hoverScaleElements hover:underline underline-offset-8">
+                            <a href="#foundernote" className="inter text-base font-medium hoverScaleElements text-gray-400 hover:text-blue-400">
                                 <p>Founder</p>
                             </a>
-                            <a href="#worktogether" className="inter hoverScaleElements hover:underline underline-offset-8">
+                            <a href="#worktogether" className="inter text-base font-medium hoverScaleElements text-gray-400 hover:text-blue-400">
                                 <p>Contact</p>
                             </a>
                         </div>
@@ -66,16 +53,16 @@ const Footer = React.memo(() => {
                     <div
                         className="w-full h-fit p-8 text-white text-left flex flex-col justify-center gap-y-5 max-lg:text-center">
                         <span className="font-bold underline underline-offset-8 inter">Contact,</span>
-                        <p className="inter -mt-4 hoverScaleElements hover:text-[gold]">+94 772 210022 / +94 112 769350</p>
+                        <p className="inter text-base font-bold -mt-2 hoverScaleElements cursor-pointer text-gray-400 hover:text-blue-400">+94 772 210022 / +94 112 769350</p>
                         <span className="font-bold underline underline-offset-8 inter">Email Address,</span>
-                        <p className="inter -mt-4 hoverScaleElements hover:text-[gold]">kumara.jayakantha@gmail.com</p>
+                        <p className="inter text-base font-bold -mt-2 hoverScaleElements cursor-pointer text-gray-400 hover:text-blue-400">kumara.jayakantha@gmail.com</p>
                         <span className="font-bold underline underline-offset-8 inter">Address,</span>
-                        <p className="inter -mt-4 hoverScaleElements hover:text-[gold]">126C1/1, High Level Road, Nugegoda,
+                        <p className="inter text-base font-bold -mt-2 hoverScaleElements cursor-pointer text-gray-400 hover:text-blue-400">126C1/1, High Level Road, Nugegoda,
                             Sri Lanka</p>
                     </div>
                 </div>
                 <div className="w-full h-1 bg-[gold]"></div>
-                <h2 className="xl:text-[1.1vw] lg:text-[1.3vw] text-center text-white">Copyrights © {year} All Rights Reserved.</h2>
+                <h2 className="text-base font-semibold text-center text-white">Copyrights © {new Date().getFullYear()} All Rights Reserved.</h2>
             </div>
         </div>
     )
