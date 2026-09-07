@@ -1,16 +1,49 @@
-# React + Vite
+# Adcore Creative
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Adcore Creative** frontend repository! This is a modern, highly interactive, and fully responsive landing page built with React, Vite, Tailwind CSS, and GSAP. It is designed to showcase the agency's essence, services, philosophy, and portfolio through a seamless and engaging user experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dynamic Animations**: Powered by [GSAP (GreenSock)](https://gsap.com/), providing smooth scroll animations, transitions, and interactive elements.
+- **Modern UI/UX**: Designed with [Tailwind CSS](https://tailwindcss.com/) for rapid and consistent styling, ensuring a fully responsive layout across all devices.
+- **Component-Driven Architecture**: Modular folder structure separating the UI into clear, maintainable sections (Hero, About, What We Do, Image Grid, Philosophy, etc.).
+- **Fast Development & Build**: Utilizing [Vite](https://vitejs.dev/) for lightning-fast Hot Module Replacement (HMR) and optimized production builds.
+- **Rich Icons & UI Elements**: Integrated with `react-icons` and `@mui/material` for polished, accessible interface components.
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations**: [GSAP](https://gsap.com/) & `@gsap/react`
+- **UI Components**: `@mui/material`, `@emotion/react`, `@emotion/styled`
+- **Icons**: `react-icons`, `@mui/icons-material`
 
-## Expanding the ESLint configuration
+## 💻 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these instructions to set up the project locally on your machine.
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed (v18 or higher is recommended).
+
+### Installation
+
+1. **Clone the repository** (if applicable):
+   ```bash
+   git clone <repository-url>
+   cd Adcore_Creative
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**:
+   Navigate to `http://localhost:5173/` to view the application in action.
